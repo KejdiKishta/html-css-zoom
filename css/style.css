@@ -28,6 +28,10 @@ body{
     color: white;
 }
 
+.c-g{
+    color: rgb(75 200 0);
+}
+
 /* HEADER */
 
 /* MAIN */
@@ -86,14 +90,11 @@ footer{
 .nav-bar{
     flex-grow: 1;
     height: var(--footer-height);
-
-    /* debug */
-    border: 1px solid white;
 }
 
-.video-settings > ul{
+.video-settings > ul, .nav-bar > ul{
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 
 .end-meeting{
