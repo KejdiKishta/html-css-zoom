@@ -1,0 +1,48 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* COMMON */
+body{
+    background-color: black;
+}
+
+:root{
+    --footer-height: 80px;
+}
+
+/* HEADER */
+
+/* MAIN */
+main{
+    height: calc(100vh - var(--footer-height));
+    padding: 60px 0 20px;
+}
+
+.container{
+    width: 90vw;
+    margin: auto;
+
+    /* debug */
+    border: 1px dashed white;
+    height: 100%;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgb(34 34 34);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    /* debug */
+    height: var(--footer-height);
+}
