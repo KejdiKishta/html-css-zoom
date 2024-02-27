@@ -32,12 +32,31 @@ body{
     color: rgb(75 200 0);
 }
 
-/* HEADER */
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* MAIN */
 main{
     height: calc(100vh - var(--footer-height));
     padding: 60px 0 20px;
+    position: relative;
+}
+
+main > ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    gap: 10px;
+}
+
+main > ul > li{
+    padding: 5px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
 }
 
 .container{
@@ -64,7 +83,7 @@ main{
     bottom: 0;
     left: 0;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color:rgba(128, 128, 128, 0.5);
 }
 
 /* FOOTER */
@@ -74,12 +93,6 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
-}
-
-.footer-flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .video-settings, .end-meeting{
