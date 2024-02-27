@@ -21,7 +21,7 @@ body{
 }
 
 :root{
-    --footer-height: 80px;
+    --footer-height: 70px;
 }
 
 .c-w{
@@ -52,7 +52,7 @@ header{
 header > ul{
     position: absolute;
     top: 0;
-    right: 1%;
+    right: 0;
     padding: 5px;
     gap: 10px;
 }
@@ -109,7 +109,7 @@ footer{
 }
 
 .video-settings, .end-meeting{
-    width: 15%;
+    width: 10%;
     height: var(--footer-height);
 }
 
