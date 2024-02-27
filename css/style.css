@@ -7,15 +7,25 @@
 
 img{
     max-width: 100%;
+    max-height: 100%;
+}
+
+ul{
+    list-style: none;
 }
 
 /* COMMON */
 body{
     background-color: black;
+    font-size: 0.7rem;
 }
 
 :root{
     --footer-height: 80px;
+}
+
+.c-w{
+    color: white;
 }
 
 /* HEADER */
@@ -29,10 +39,28 @@ main{
 .container{
     width: 90vw;
     margin: auto;
+    padding: 5px;
+
+    display: flex;
+    flex-wrap: wrap;
 
     /* debug */
     border: 1px dashed white;
     height: 100%;
+}
+
+.user{
+    width: calc(100%/7 - 5px);
+    margin: 0 5px 10px 0;
+    position: relative;
+}
+
+.micr-name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* FOOTER */
@@ -42,7 +70,44 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
+}
+
+.footer-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-settings, .end-meeting{
+    width: 10%;
+    height: var(--footer-height);
+}
+
+.nav-bar{
+    flex-grow: 1;
+    height: var(--footer-height);
 
     /* debug */
-    height: var(--footer-height);
+    border: 1px solid white;
+}
+
+.video-settings > ul{
+    display: flex;
+    gap: 10px;
+}
+
+.end-meeting{
+    background-color: rgb(74 74 74);
+    color: red;
+}
+
+.icon{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.chevron{
+    font-size: .4rem;
+    display: flex;
+    align-items: center;
 }
