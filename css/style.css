@@ -68,7 +68,7 @@ main{
     height: calc(100vh - var(--footer-height));
     padding: 60px 0 20px;
     position: relative;
-    overflow-y: scroll;
+    overflow-y: auto;
 
 }
 
@@ -109,7 +109,7 @@ footer{
 }
 
 .video-settings, .end-meeting{
-    width: 10%;
+    width: 12%;
     height: var(--footer-height);
 }
 
